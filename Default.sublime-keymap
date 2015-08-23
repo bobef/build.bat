@@ -1,0 +1,6 @@
+[
+	{ "keys": ["f5"], "command": "build", "args": {"variant": "Run"} },
+	{ "keys": ["shift+f5"], "command": "build", "args": {"variant": "Debug"} },
+	{ "keys": ["f8"], "command": "build", "args": {"variant": "Tests"} },
+	{ "keys": ["f9"], "command": "build", "args": {"variant": "User"} }
+]

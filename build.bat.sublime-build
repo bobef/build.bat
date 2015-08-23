@@ -1,0 +1,34 @@
+{
+	"windows": {
+		"file_regex": "([a-zA-Z]:\\\\[^:\\?\\*]+?)(?::| on line )([0-9]+)"
+	},
+	"linux": {
+		"file_regex": "((?:^\\.)?/[^:\\?\\*]*?)(?::| on line )([0-9]+)"
+	},
+	"osx": {
+		"file_regex": "((?:^\\.)?/[^:\\?\\*]*?)(?::| on line )([0-9]+)"
+	},
+
+	"shell_cmd": "\"${packages}/build.bat/build\" build",
+	"variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "\"${packages}/build.bat/build\" run"
+		},
+		{
+			"name": "Debug",
+			"shell_cmd": "\"${packages}/build.bat/build\" debug"
+		},
+		{
+			"name": "Tests",
+			"shell_cmd": "\"${packages}/build.bat/build\" tests"
+		},
+		{
+			"name": "User",
+			"shell_cmd": "\"${packages}/build.bat/build\" user"
+		}
+	],
+
+	"working_dir": "$filepath"
+}
